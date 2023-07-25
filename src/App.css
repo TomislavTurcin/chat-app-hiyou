@@ -1,0 +1,111 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  background-color: #dedede;
+ 
+}
+
+.title
+ {
+  text-align: center;
+  color: rgb(0, 0, 0);
+ border-radius: 15px;
+  text-shadow: 4px 4px 4px rgb(242, 255, 0);
+  font-size: 24px;
+}
+
+.list-of-messages{
+  
+  max-width: 800px;
+  width: 100%;
+ padding: 0px;
+  flex-grow: 1;
+  overflow: auto;
+  background-color: rgb(203, 203, 203);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.4);
+}
+
+.message {
+ margin: 5px;
+  display: flex;
+}
+
+.message.currentMember {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.author {
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #ffffff;
+ }
+
+ .currentMember .author {
+  align-items: flex-end;
+  background-color: rgb(253, 255, 196);
+}
+
+.name {
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 23px;
+  padding: 5px;
+  font-style: italic;
+  font-weight: 900;
+ 
+}
+
+.author .text {
+  max-width: 400px;
+ border-radius: 12px;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-size: 17px; 
+  margin: 0;
+   padding: 10px;
+}
+
+li{
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  padding: 5px;
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+  
+}
+
+form {
+  display: flex;
+  width: 100%;
+   max-width: 900px;
+  margin: 0 7% 15px;
+ justify-content: space-between;
+}
+
+input {
+   flex-grow: 1;
+  font-size: 16px;
+  padding: 12px;
+  width: 60vh;
+  border: 2px solid rgb(0, 0, 0) ;
+ border-radius: 10px;
+}
+
+button {
+  padding: 10px 10px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 0);
+  color: rgb(0, 0, 0);
+  border: solid 2px rgb(0, 0, 0);
+ border-radius: 10px;
+  
+}
